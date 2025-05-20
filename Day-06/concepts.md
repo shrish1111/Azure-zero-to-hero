@@ -67,3 +67,27 @@ Azure VPN Gateway provides secure, site-to-site connectivity between your on-pre
 - **High Availability**: Supports active-active and active-passive configurations for high availability.
 
 - **BGP Support**: Allows dynamic routing between your on-premises network and Azure.
+
+## NAT Gateway
+
+NAT Gateway = Network Address Translation Gateway
+
+It's a managed, scalable way to enable outbound-only internet connectivity for resources in Azure Virtual Networks (VNets).
+
+🛠️ What Does It Do?
+Lets your private Azure resources (e.g., VMs without public IPs) send traffic out to the internet.
+
+Hides internal IPs behind a static public IP or prefix.
+
+Does NOT allow inbound connections — it’s outbound only.
+
+🧱 Common Use Case:
+You're hosting VMs in a private subnet (no public IPs), and they:
+
+Need to download updates
+
+Access external APIs or services
+
+Pull packages from the internet (like from apt, yum, pip, etc.)
+
+➡ Instead of giving each VM a public IP (bad practice), you attach a NAT Gateway to the subnet. Now, all outbound internet traffic from VMs is routed through the NAT Gateway.
