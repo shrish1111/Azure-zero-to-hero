@@ -37,12 +37,7 @@ When deploying resources in Azure, it's crucial to consider factors such as:
 - **Disaster Recovery Planning:** Leverage region pairing for effective disaster recovery planning.
 
 
-📊 Key Differences
-Feature	Region	                  Availability Zone
-Scope	Entire geographic area	    One or more data centers within a region
-Fault Isolation	Between regions	  Between zones in the same region
-Use Case	Geo-redundancy, DR	    High availability, low-latency failover
-Redundancy Level	Region-level	  Data center-level
-Example	East US, West Europe	    East US - Zone 1, East US - Zone 2
+![image](https://github.com/user-attachments/assets/15d5a6fb-56d1-48f0-b530-4f12d700caba)
+
 
 
